@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Survey form</title>
 </head>
 <body>
-    
+<div class="cont">
+    <header class="header">
+<h1 id="title" class="txt">Star Wars Survey form</h1>
+<p id="description"> Thank you so much for taking the time to complete this little Star Wars survey.</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-lable" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name..." required>
+        </div>
+    </form>
+</div>
 </body>
 </html>
