@@ -11,7 +11,7 @@
 <div class="cont">
     <header class="header">
 <h1 id="title" class="txt">Star Wars Survey form</h1>
-<p id="description"> Thank you so much for taking the time to complete this little Star Wars survey.</p>
+<p id="description"> Thank you so much for taking the time to complete this small survey on Star Wars.</p>
     </header>
     <form id="survey-form">
         <div class="form-group">
@@ -26,6 +26,73 @@
             <label id="number-label" for="number">Age</label>
             <input type="number" name="age" id="number" min="5" max="75" class="form-control" placeholder="Enter your age...">
         </div>
+        <div class="form-group">
+            <p>At what age did you first watch "Star Wars"?</p>
+            <select id="dropdown" name="age" class="form-control" required>
+                <option disabled selected value>Select current age...</option>
+                <option value="5">5</option>
+                <option value="5-10">5 - 10</option>
+                <option value="10-20">10 - 20</option>
+                <option value=">20"> >20</option>
+                <option value=">30"> >30</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Which part of "Star Wars" did you like the most?</p>
+            <label>
+                <input name="user-part" value="Prequels" type="radio" class="input-radio">Prequels(1,2,3 (Times of the Republic))
+            </label>
+            <label>
+                <input name="user-part" value="Original Trilogy" type="radio" class="input-radio" checked>Original Trilogy(4,5,6 (Times of the Empire))
+            </label>
+            <label>
+                <input name="user-part" value="Sequles" type="radio" class="input-radio">Sequles(7,8,9 (Times of the First Order))
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite duel?</p>
+            <select id="favorite" name="favorite" class="form-control" required>
+                <option disabled selected value>Select favorite duel...</option>
+                <option value="obi_wan_vs_maul">Obi Wan vs Darth Maul</option>
+                <option value="obi_wan_vs_anakin">Obi Wan vs Anakin</option>
+                <option value="luke_vs_vader">Luke vs Darth Vader</option>
+                <option value="rey_vs_ren">Rey vs Kylo Ren</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Who is your favorite character?</p>
+                <label>
+                    <input name="prefer" value="obi-wan-kenobi" type="checkbox" class="input-checkbox">Obi-Wan Kenobi
+                </label>
+                <label>
+                    <input name="prefer" value="anakin-skywalker" type="checkbox" class="input-checkbox">Anakin Skywalker(Darth Vader)
+                </label>
+                <label>
+                    <input name="prefer" value="darth-maul" type="checkbox" class="input-checkbox">Darth Maul
+                </label>
+                <label>
+                    <input name="prefer" value="luke-skywalker" type="checkbox" class="input-checkbox">Luke Skywalker
+                </label>
+                <label>
+                    <input name="prefer" value="darth-sidious" type="checkbox" class="input-checkbox">Darth Sidious
+                </label>
+                <label>
+                    <input name="prefer" value="ahsoka-tano" type="checkbox" class="input-checkbox">Ahsoka Tano
+                </label>
+                <label>
+                    <input name="prefer" value="mandalorian" type="checkbox" class="input-checkbox">Mandalorian
+                </label>
+                <label>
+                    <input name="prefer" value="stormtrooper" type="checkbox" class="input-checkbox">Stormtrooper
+                </label>
+          </div>
+          <div class="form-group">
+            <p>Didn't find any suitable answers? Write to us.</p>
+            <textarea id="comments" class="input-textarea" name="answers"placeholder="Enter your answers here..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>    
     </form>
 </div>
 </body>
